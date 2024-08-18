@@ -23,7 +23,7 @@ header{
     left: 0;
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: #b2b2b2;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -428,30 +428,32 @@ img.displaySlide {
     .menuToggle{
         position: absolute;
         display: block;
+        padding: 10px;
         font-size: 2em;
         cursor: pointer;
         transform: translateX(30px);
         z-index: 10;
+        
     }
     header .navigation{
-        position: absolute;
+        position: fixed;
         opacity: 0;
         visibility: hidden;
         left: 100%;
     }
-    header.open .navigation{
+    header.open .navigation {
         top: 80px;
         opacity: 1;
         visibility: visible;
-        left:0;
+        left: 0;
         display: flex;
         flex-direction: column;
         background: #fff;
-        width: 80%;
+        width: 70%;
         height: calc(100vh - 80px);
         padding: 40px;
         border-top: 1px solid rgba(0, 0, 0, 0.5);
-        z-index: 999;
+        transition: right 0.3s ease-in, opacity 0.3s ease;
     }
     header.open .navigation li a{
         font-size: 1.25em;
@@ -476,30 +478,32 @@ img.displaySlide {
     .menuToggle{
         position: absolute;
         display: block;
+        padding: 10px;
         font-size: 2em;
         cursor: pointer;
         transform: translateX(30px);
         z-index: 10;
+        
     }
     header .navigation{
-        position: absolute;
+        position: fixed;
         opacity: 0;
         visibility: hidden;
         left: 100%;
     }
-    header.open .navigation{
-        backdrop-filter:blur(10px);
+    header.open .navigation {
         top: 80px;
         opacity: 1;
         visibility: visible;
-        left:0;
+        left: 0;
         display: flex;
         flex-direction: column;
         background: #fff;
-        width: 80%;
-        height:100vh;
+        width: 70%;
+        height: calc(100vh - 80px);
         padding: 40px;
         border-top: 1px solid rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease-in, opacity 0.3s ease;
     }
     header.open .navigation li a{
         font-size: 1.25em;
@@ -547,30 +551,32 @@ img.displaySlide {
     .menuToggle{
         position: absolute;
         display: block;
+        padding: 10px;
         font-size: 2em;
         cursor: pointer;
         transform: translateX(30px);
         z-index: 10;
+        
     }
     header .navigation{
-        position: absolute;
+        position: fixed;
         opacity: 0;
         visibility: hidden;
         left: 100%;
     }
-    header.open .navigation{
-        backdrop-filter:blur(10px);
+    header.open .navigation {
         top: 80px;
         opacity: 1;
         visibility: visible;
-        left:0;
+        left: 0;
         display: flex;
         flex-direction: column;
         background: #fff;
-        width: 80%;
+        width: 70%;
         height: calc(100vh - 80px);
         padding: 40px;
         border-top: 1px solid rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease-in, opacity 0.3s ease;
     }
     header.open .navigation li a{
         font-size: 1.25em;

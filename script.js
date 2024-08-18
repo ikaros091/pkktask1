@@ -25,6 +25,13 @@ menuToggle.onclick = function(){
     searchBtn.classList.remove('active');
 }
 
+let navLinks = document.querySelectorAll('.navigation li a');
+navLinks.forEach(link => {
+    link.onclick = function() {
+        header.classList.remove('open');
+    };
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Cards are ready!');
